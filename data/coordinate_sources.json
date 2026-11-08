@@ -1,0 +1,254 @@
+[
+  {
+    "id": 0,
+    "name": "Sant'Alessio Siculo",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Sant%27Alessio+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:43:26.418184+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_0.json",
+    "raw_response_sha256": "22915fd9b751ec7518ea20457c1b61423cf6717839ebfd1b057359acb033508e",
+    "results": [
+      {
+        "place_id": 53799373,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39429,
+        "lat": "37.9244943",
+        "lon": "15.3492875",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5272030844493754,
+        "addresstype": "village",
+        "name": "Sant'Alessio Siculo",
+        "display_name": "Sant'Alessio Siculo, Messina, Sicilia, 98030, Italia",
+        "address": {
+          "village": "Sant'Alessio Siculo",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98030",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.9094941",
+          "37.9384219",
+          "15.3022124",
+          "15.3574912"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Santa Teresa di Riva",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Santa+Teresa+di+Riva%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:43:35.395003+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_1.json",
+    "raw_response_sha256": "6696b9eed3630b4190a1b3de5cf48308dd24feae00efc477ae4f2a37e0e171a1",
+    "results": [
+      {
+        "place_id": 53844388,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39431,
+        "lat": "37.9469620",
+        "lon": "15.3676890",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5298648354283636,
+        "addresstype": "village",
+        "name": "Santa Teresa di Riva",
+        "display_name": "Santa Teresa di Riva, Messina, Sicilia, 98028, Italia",
+        "address": {
+          "village": "Santa Teresa di Riva",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98028",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.9314102",
+          "37.9844427",
+          "15.2977261",
+          "15.3799992"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Furci Siculo",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Furci+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:43:41.958460+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_2.json",
+    "raw_response_sha256": "f16d378664e5aec37d8834ce107f19a60140153f34a626c9b392297ded2443d2",
+    "results": [
+      {
+        "place_id": 53412070,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39453,
+        "lat": "37.9612044",
+        "lon": "15.3817350",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5293006057980314,
+        "addresstype": "village",
+        "name": "Furci Siculo",
+        "display_name": "Furci Siculo, Messina, Sicilia, 98023, Italia",
+        "address": {
+          "village": "Furci Siculo",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98023",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.9570906",
+          "38.0324260",
+          "15.2686786",
+          "15.3867432"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Roccalumera",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Roccalumera%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:43:48.432823+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_3.json",
+    "raw_response_sha256": "f78721f23ecaf3f677cf36015f1425c744746db81f21756d05a71537215c5365",
+    "results": [
+      {
+        "place_id": 53720593,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39455,
+        "lat": "37.9762630",
+        "lon": "15.3951890",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5302649010227648,
+        "addresstype": "village",
+        "name": "Roccalumera",
+        "display_name": "Roccalumera, Messina, Sicilia, 98027, Italia",
+        "address": {
+          "village": "Roccalumera",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98027",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.9642330",
+          "38.0150765",
+          "15.3434614",
+          "15.4048407"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Letojanni",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Letojanni%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:43:55.565999+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_4.json",
+    "raw_response_sha256": "acaff5178b5aa11017dd06052eec10e5342071880753555e249557805c9c202b",
+    "results": [
+      {
+        "place_id": 53763503,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39393,
+        "lat": "37.8802614",
+        "lon": "15.3064429",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5290776073236035,
+        "addresstype": "village",
+        "name": "Letojanni",
+        "display_name": "Letojanni, Messina, Sicilia, 98037, Italia",
+        "address": {
+          "village": "Letojanni",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98037",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.8754907",
+          "37.9096734",
+          "15.2798652",
+          "15.3359296"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Taormina",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Taormina%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+    "retrieved_at_utc": "2026-11-08T11:44:01.921285+00:00",
+    "http_status": 200,
+    "raw_response_file": "data/coordinate_source_5.json",
+    "raw_response_sha256": "fd806083ab06e56b73a499fb5ad50dd35e56756eec7dd82c556f8b6cd0b645bb",
+    "results": [
+      {
+        "place_id": 53336176,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 39384,
+        "lat": "37.8512218",
+        "lon": "15.2830191",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5840871705674391,
+        "addresstype": "town",
+        "name": "Taormina",
+        "display_name": "Taormina, Messina, Sicilia, 98039, Italia",
+        "address": {
+          "town": "Taormina",
+          "county": "Messina",
+          "ISO3166-2-lvl6": "IT-ME",
+          "state": "Sicilia",
+          "ISO3166-2-lvl4": "IT-82",
+          "postcode": "98039",
+          "country": "Italia",
+          "country_code": "it"
+        },
+        "boundingbox": [
+          "37.8177288",
+          "37.8781055",
+          "15.2233146",
+          "15.3056733"
+        ]
+      }
+    ]
+  }
+]

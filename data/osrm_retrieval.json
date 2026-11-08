@@ -1,0 +1,8 @@
+{
+  "query_url": "https://router.project-osrm.org/table/v1/driving/15.3492875,37.9244943;15.3676890,37.9469620;15.3817350,37.9612044;15.3951890,37.9762630;15.3064429,37.8802614;15.2830191,37.8512218?annotations=distance,duration",
+  "request_started_at_utc": "2026-11-08T11:45:06.179664+00:00",
+  "retrieved_at_utc": "2026-11-08T11:45:14.104910+00:00",
+  "http_status": 200,
+  "raw_response_file": "data/osrm_table_response.json",
+  "raw_response_sha256": "caa8f701841fcf0ebe3db9e7f9036ec9fed3ba74b863d34e6ee3ba36dec3e288"
+}

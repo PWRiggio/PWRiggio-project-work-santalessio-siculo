@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "title": "Pianificazione delle consegne agroalimentari nell’area di Sant’Alessio Siculo",
+  "method": {
+    "algorithm": "enumerazione completa",
+    "objective": "minima distanza complessiva sulla matrice stradale fornita",
+    "tie_break": [
+      "minimo tempo di guida complessivo",
+      "ordine lessicografico dei percorsi"
+    ],
+    "distance_internal_unit": "decimetro intero",
+    "time_internal_unit": "decimo di secondo intero",
+    "directed_matrix": true,
+    "note": "Gli scenari sono ottimizzati per distanza; i costi e la sensibilità sono calcolati sui percorsi così ottenuti."
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Sant’Alessio Siculo",
+      "demand_kg": 0,
+      "lon": 15.349012,
+      "lat": 37.924581,
+      "requested_lon": 15.3492875,
+      "requested_lat": 37.9244943,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Sant%27Alessio+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39429",
+      "point_description": "Deposito convenzionale nel comune di Sant’Alessio Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 1,
+      "name": "Santa Teresa di Riva",
+      "demand_kg": 80,
+      "lon": 15.367854,
+      "lat": 37.946854,
+      "requested_lon": 15.367689,
+      "requested_lat": 37.946962,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Santa+Teresa+di+Riva%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39431",
+      "point_description": "Punto convenzionale nel centro di Santa Teresa di Riva, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 2,
+      "name": "Furci Siculo",
+      "demand_kg": 40,
+      "lon": 15.381784,
+      "lat": 37.961169,
+      "requested_lon": 15.381735,
+      "requested_lat": 37.9612044,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Furci+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39453",
+      "point_description": "Punto convenzionale nel centro di Furci Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 3,
+      "name": "Roccalumera",
+      "demand_kg": 50,
+      "lon": 15.395198,
+      "lat": 37.976258,
+      "requested_lon": 15.395189,
+      "requested_lat": 37.976263,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Roccalumera%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39455",
+      "point_description": "Punto convenzionale nel centro di Roccalumera, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 4,
+      "name": "Letojanni",
+      "demand_kg": 35,
+      "lon": 15.306352,
+      "lat": 37.88033,
+      "requested_lon": 15.3064429,
+      "requested_lat": 37.8802614,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Letojanni%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39393",
+      "point_description": "Punto convenzionale nel centro di Letojanni, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 5,
+      "name": "Taormina",
+      "demand_kg": 55,
+      "lon": 15.282962,
+      "lat": 37.851313,
+      "requested_lon": 15.2830191,
+      "requested_lat": 37.8512218,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Taormina%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39384",
+      "point_description": "Punto convenzionale nel centro di Taormina, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    }
+  ],
+  "operations": {
+    "driver_eur_hour": 18,
+    "service_minutes_client": 10,
+    "preparation_minutes_vehicle": 15
+  },
+  "source": {
+    "name": "OSRM public routing service on OpenStreetMap road network",
+    "query_url": "https://router.project-osrm.org/table/v1/driving/15.3492875,37.9244943;15.3676890,37.9469620;15.3817350,37.9612044;15.3951890,37.9762630;15.3064429,37.8802614;15.2830191,37.8512218?annotations=distance,duration",
+    "consultation_date": "2026-11-08",
+    "retrieved_at_utc": "2026-11-08T11:45:14.104910+00:00",
+    "documentation_url": "https://project-osrm.org/docs/v5.24.0/api/#table-service",
+    "raw_response_file": "data/osrm_table_response.json",
+    "raw_response_sha256": "caa8f701841fcf0ebe3db9e7f9036ec9fed3ba74b863d34e6ee3ba36dec3e288",
+    "details_file": "data/road_distances.json",
+    "coordinate_sources_file": "data/coordinate_sources.json",
+    "coordinate_documentation_url": "https://nominatim.org/release-docs/latest/api/Search/",
+    "coordinate_usage_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
+    "attribution_url": "https://www.openstreetmap.org/copyright",
+    "method_notes_it": [
+      "Matrice completa orientata: 30 collegamenti stradali fra sei punti reali, oltre alla diagonale nulla.",
+      "Il deposito è un punto convenzionale nel comune di Sant’Alessio Siculo, in provincia di Messina; non si assume l’esistenza di un magazzino commerciale presso la coordinata scelta.",
+      "Le coordinate rappresentative delle sei località provengono da OpenStreetMap attraverso sei ricerche puntuali Nominatim, le cui risposte originali sono conservate con URL, data e ora UTC e impronta SHA-256; non costituiscono un dataset ufficiale comunale o ISTAT.",
+      "Le coordinate dei cinque clienti definiscono punti convenzionali nei rispettivi centri comunali e non identificano clienti commerciali reali.",
+      "I punti sono agganciati da OSRM alla rete stradale; coordinate richieste e risultanti, nomi stradali restituiti e scostamenti sono conservati.",
+      "Le distanze sono le lunghezze degli itinerari più veloci restituiti dal profilo driving di OSRM, non i minimi chilometrici assoluti sulla rete stradale.",
+      "I tempi sono stime del motore di routing, non misure sul campo né garanzie sui tempi nelle condizioni di traffico e viabilità effettive.",
+      "I due versi sono conservati separatamente e possono avere valori differenti; non è stata imposta una simmetria artificiale.",
+      "Le fonti delle coordinate servono soltanto a fissare i punti; tutte le distanze e durate della matrice provengono dalla medesima interrogazione OSRM.",
+      "La risposta originale è congelata per rendere i risultati riproducibili; future interrogazioni possono restituire dati aggiornati.",
+      "Il servizio non ha restituito il campo data_version, quindi non è nota la data esatta dell’estratto OpenStreetMap utilizzato.",
+      "Il profilo per auto non verifica eventuali restrizioni specifiche di massa, sagoma, merci, accesso a zone a traffico limitato o autorizzazioni dei furgoni refrigerati.",
+      "La matrice finale usa il profilo driving senza esclusioni, pertanto non è assunta l’assenza di tratti a pedaggio.",
+      "Dati geografici © OpenStreetMap contributors, ODbL 1.0; attribuzione e licenza: https://www.openstreetmap.org/copyright."
+    ]
+  },
+  "scenarios": {
+    "single_vehicle": {
+      "label": "Un veicolo da 300 kg",
+      "vehicle_type": "large",
+      "vehicle_parameters": {
+        "count": 1,
+        "capacity_kg": 300,
+        "fixed_cost_eur": 95,
+        "variable_cost_eur_km": 0.48
+      },
+      "constraint_checks": {
+        "all_customers_served_once": true,
+        "all_routes_start_and_end_at_depot": true,
+        "capacity_respected": true,
+        "all_routes_nonempty": true,
+        "required_vehicle_count": true
+      },
+      "routes": [
+        {
+          "route_id": 1,
+          "node_ids": [
+            0,
+            4,
+            5,
+            3,
+            2,
+            1,
+            0
+          ],
+          "node_names": [
+            "Sant’Alessio Siculo",
+            "Letojanni",
+            "Taormina",
+            "Roccalumera",
+            "Furci Siculo",
+            "Santa Teresa di Riva",
+            "Sant’Alessio Siculo"
+          ],
+          "arcs": [
+            {
+              "from_id": 0,
+              "to_id": 4,
+              "from_name": "Sant’Alessio Siculo",
+              "to_name": "Letojanni",
+              "distance_m": 7586.7,
+              "distance_km": 7.5867,
+              "driving_seconds": 609.1
+            },
+            {
+              "from_id": 4,
+              "to_id": 5,
+              "from_name": "Letojanni",
+              "to_name": "Taormina",
+              "distance_m": 5822.0,
+              "distance_km": 5.822,
+              "driving_seconds": 521.5
+            },
+            {
+              "from_id": 5,
+              "to_id": 3,
+              "from_name": "Taormina",
+              "to_name": "Roccalumera",
+              "distance_m": 19986.7,
+              "distance_km": 19.9867,
+              "driving_seconds": 1167.2
+            },
+            {
+              "from_id": 3,
+              "to_id": 2,
+              "from_name": "Roccalumera",
+              "to_name": "Furci Siculo",
+              "distance_m": 2284.5,
+              "distance_km": 2.2845,
+              "driving_seconds": 138.2
+            },
+            {
+              "from_id": 2,
+              "to_id": 1,
+              "from_name": "Furci Siculo",
+              "to_name": "Santa Teresa di Riva",
+              "distance_m": 2387.1,
+              "distance_km": 2.3871,
+              "driving_seconds": 195.6
+            },
+            {
+              "from_id": 1,
+              "to_id": 0,
+              "from_name": "Santa Teresa di Riva",
+              "to_name": "Sant’Alessio Siculo",
+              "distance_m": 3332.3,
+              "distance_km": 3.3323,
+              "driving_seconds": 249.4
+            }
+          ],
+          "load_kg": 260,
+          "distance_dm": 413993,
+          "distance_m": 41399.3,
+          "distance_km": 41.3993,
+          "driving_ds": 28810,
+          "driving_seconds": 2881.0,
+          "driving_minutes": 48.016666666666666,
+          "service_seconds": 3000.0,
+          "preparation_seconds": 900.0,
+          "total_ds": 67810,
+          "total_seconds": 6781.0,
+          "total_minutes": 113.01666666666667
+        }
+      ],
+      "totals": {
+        "vehicle_count": 1,
+        "load_kg": 260,
+        "capacity_kg": 300,
+        "distance_dm": 413993,
+        "distance_m": 41399.3,
+        "distance_km": 41.3993,
+        "driving_ds": 28810,
+        "driving_seconds": 2881.0,
+        "driving_hours": 0.8002777777777778,
+        "service_seconds": 3000.0,
+        "preparation_seconds": 900.0,
+        "driver_ds": 67810,
+        "driver_seconds": 6781.0,
+        "driver_hours": 1.8836111111111111,
+        "completion_seconds": 6781.0,
+        "completion_minutes": 113.01666666666667
+      },
+      "costs": {
+        "fixed_eur": 95.0,
+        "distance_eur": 19.871664,
+        "driver_eur": 33.905,
+        "total_eur": 148.776664
+      },
+      "enumeration": {
+        "permutations": 120,
+        "cuts_per_permutation": 1,
+        "candidates_generated": 120,
+        "feasible_candidates": 120,
+        "discarded_for_capacity": 0,
+        "feasible_unique_vehicle_exchange": 120,
+        "optimal_distance_candidates": 1,
+        "optimal_distance_unique_vehicle_exchange": 1,
+        "optimal_distance_and_time_candidates": 1,
+        "optimal_unique_vehicle_exchange": 1
+      },
+      "optimal_solutions": [
+        {
+          "routes_node_ids": [
+            [
+              0,
+              4,
+              5,
+              3,
+              2,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "two_vehicles": {
+      "label": "Due veicoli da 150 kg",
+      "vehicle_type": "small",
+      "vehicle_parameters": {
+        "count": 2,
+        "capacity_kg": 150,
+        "fixed_cost_eur": 55,
+        "variable_cost_eur_km": 0.38
+      },
+      "constraint_checks": {
+        "all_customers_served_once": true,
+        "all_routes_start_and_end_at_depot": true,
+        "capacity_respected": true,
+        "all_routes_nonempty": true,
+        "required_vehicle_count": true
+      },
+      "routes": [
+        {
+          "route_id": 1,
+          "node_ids": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "node_names": [
+            "Sant’Alessio Siculo",
+            "Furci Siculo",
+            "Santa Teresa di Riva",
+            "Sant’Alessio Siculo"
+          ],
+          "arcs": [
+            {
+              "from_id": 0,
+              "to_id": 2,
+              "from_name": "Sant’Alessio Siculo",
+              "to_name": "Furci Siculo",
+              "distance_m": 6218.6,
+              "distance_km": 6.2186,
+              "driving_seconds": 377.6
+            },
+            {
+              "from_id": 2,
+              "to_id": 1,
+              "from_name": "Furci Siculo",
+              "to_name": "Santa Teresa di Riva",
+              "distance_m": 2387.1,
+              "distance_km": 2.3871,
+              "driving_seconds": 195.6
+            },
+            {
+              "from_id": 1,
+              "to_id": 0,
+              "from_name": "Santa Teresa di Riva",
+              "to_name": "Sant’Alessio Siculo",
+              "distance_m": 3332.3,
+              "distance_km": 3.3323,
+              "driving_seconds": 249.4
+            }
+          ],
+          "load_kg": 120,
+          "distance_dm": 119380,
+          "distance_m": 11938.0,
+          "distance_km": 11.938,
+          "driving_ds": 8226,
+          "driving_seconds": 822.6,
+          "driving_minutes": 13.71,
+          "service_seconds": 1200.0,
+          "preparation_seconds": 900.0,
+          "total_ds": 29226,
+          "total_seconds": 2922.6,
+          "total_minutes": 48.71
+        },
+        {
+          "route_id": 2,
+          "node_ids": [
+            0,
+            4,
+            5,
+            3,
+            0
+          ],
+          "node_names": [
+            "Sant’Alessio Siculo",
+            "Letojanni",
+            "Taormina",
+            "Roccalumera",
+            "Sant’Alessio Siculo"
+          ],
+          "arcs": [
+            {
+              "from_id": 0,
+              "to_id": 4,
+              "from_name": "Sant’Alessio Siculo",
+              "to_name": "Letojanni",
+              "distance_m": 7586.7,
+              "distance_km": 7.5867,
+              "driving_seconds": 609.1
+            },
+            {
+              "from_id": 4,
+              "to_id": 5,
+              "from_name": "Letojanni",
+              "to_name": "Taormina",
+              "distance_m": 5822.0,
+              "distance_km": 5.822,
+              "driving_seconds": 521.5
+            },
+            {
+              "from_id": 5,
+              "to_id": 3,
+              "from_name": "Taormina",
+              "to_name": "Roccalumera",
+              "distance_m": 19986.7,
+              "distance_km": 19.9867,
+              "driving_seconds": 1167.2
+            },
+            {
+              "from_id": 3,
+              "to_id": 0,
+              "from_name": "Roccalumera",
+              "to_name": "Sant’Alessio Siculo",
+              "distance_m": 8094.7,
+              "distance_km": 8.0947,
+              "driving_seconds": 479.0
+            }
+          ],
+          "load_kg": 140,
+          "distance_dm": 414901,
+          "distance_m": 41490.1,
+          "distance_km": 41.4901,
+          "driving_ds": 27768,
+          "driving_seconds": 2776.8,
+          "driving_minutes": 46.28,
+          "service_seconds": 1800.0,
+          "preparation_seconds": 900.0,
+          "total_ds": 54768,
+          "total_seconds": 5476.8,
+          "total_minutes": 91.28
+        }
+      ],
+      "totals": {
+        "vehicle_count": 2,
+        "load_kg": 260,
+        "capacity_kg": 300,
+        "distance_dm": 534281,
+        "distance_m": 53428.1,
+        "distance_km": 53.4281,
+        "driving_ds": 35994,
+        "driving_seconds": 3599.4,
+        "driving_hours": 0.9998333333333334,
+        "service_seconds": 3000.0,
+        "preparation_seconds": 1800.0,
+        "driver_ds": 83994,
+        "driver_seconds": 8399.4,
+        "driver_hours": 2.3331666666666666,
+        "completion_seconds": 5476.8,
+        "completion_minutes": 91.28
+      },
+      "costs": {
+        "fixed_eur": 110.0,
+        "distance_eur": 20.302678,
+        "driver_eur": 41.997,
+        "total_eur": 172.299678
+      },
+      "enumeration": {
+        "permutations": 120,
+        "cuts_per_permutation": 4,
+        "candidates_generated": 480,
+        "feasible_candidates": 96,
+        "discarded_for_capacity": 384,
+        "feasible_unique_vehicle_exchange": 48,
+        "optimal_distance_candidates": 2,
+        "optimal_distance_unique_vehicle_exchange": 1,
+        "optimal_distance_and_time_candidates": 2,
+        "optimal_unique_vehicle_exchange": 1
+      },
+      "optimal_solutions": [
+        {
+          "routes_node_ids": [
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              5,
+              3,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "baseline_cheaper_scenario": "single_vehicle",
+    "baseline_savings_eur": 23.523014,
+    "two_minus_one_cost_eur": 23.523014,
+    "additional_distance_two_vehicles_km": 12.0288,
+    "additional_driver_hours_two_vehicles": 0.44955555555555554,
+    "completion_reduction_minutes": 21.736666666666665,
+    "threshold_large_fixed_cost_eur": 118.523014,
+    "threshold_formula": "F_grande* = 2 F_piccolo + k_piccolo D_due - k_grande D_uno + w (H_due - H_uno)",
+    "threshold_interpretation": "Sotto la soglia conviene un veicolo; sopra la soglia convengono due veicoli; alla soglia i costi coincidono."
+  },
+  "sensitivity": {
+    "parameter": "large_vehicle_fixed_cost_eur",
+    "min_eur": 60,
+    "max_eur": 180,
+    "step_eur": 5,
+    "fixed_routes": true,
+    "threshold_eur": 118.523014,
+    "threshold_inside_interval": true,
+    "single_vehicle_cost_min_eur": 113.776664,
+    "single_vehicle_cost_max_eur": 233.776664,
+    "two_vehicles_cost_min_eur": 172.299678,
+    "two_vehicles_cost_max_eur": 172.299678,
+    "points": [
+      {
+        "large_fixed_cost_eur": 60.0,
+        "single_vehicle_eur": 113.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 65.0,
+        "single_vehicle_eur": 118.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 70.0,
+        "single_vehicle_eur": 123.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 75.0,
+        "single_vehicle_eur": 128.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 80.0,
+        "single_vehicle_eur": 133.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 85.0,
+        "single_vehicle_eur": 138.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 90.0,
+        "single_vehicle_eur": 143.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 95.0,
+        "single_vehicle_eur": 148.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 100.0,
+        "single_vehicle_eur": 153.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 105.0,
+        "single_vehicle_eur": 158.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 110.0,
+        "single_vehicle_eur": 163.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 115.0,
+        "single_vehicle_eur": 168.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "single_vehicle"
+      },
+      {
+        "large_fixed_cost_eur": 118.523014,
+        "single_vehicle_eur": 172.299678,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "tie"
+      },
+      {
+        "large_fixed_cost_eur": 120.0,
+        "single_vehicle_eur": 173.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 125.0,
+        "single_vehicle_eur": 178.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 130.0,
+        "single_vehicle_eur": 183.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 135.0,
+        "single_vehicle_eur": 188.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 140.0,
+        "single_vehicle_eur": 193.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 145.0,
+        "single_vehicle_eur": 198.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 150.0,
+        "single_vehicle_eur": 203.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 155.0,
+        "single_vehicle_eur": 208.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 160.0,
+        "single_vehicle_eur": 213.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 165.0,
+        "single_vehicle_eur": 218.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 170.0,
+        "single_vehicle_eur": 223.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 175.0,
+        "single_vehicle_eur": 228.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      },
+      {
+        "large_fixed_cost_eur": 180.0,
+        "single_vehicle_eur": 233.776664,
+        "two_vehicles_eur": 172.299678,
+        "cheaper_scenario": "two_vehicles"
+      }
+    ]
+  }
+}

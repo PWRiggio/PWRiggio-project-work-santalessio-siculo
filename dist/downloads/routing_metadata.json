@@ -1,0 +1,358 @@
+{
+  "source": "OSRM public routing service on OpenStreetMap road network",
+  "query_url": "https://router.project-osrm.org/table/v1/driving/15.3492875,37.9244943;15.3676890,37.9469620;15.3817350,37.9612044;15.3951890,37.9762630;15.3064429,37.8802614;15.2830191,37.8512218?annotations=distance,duration",
+  "request_started_at_utc": "2026-11-08T11:45:06.179664+00:00",
+  "retrieved_at_utc": "2026-11-08T11:45:14.104910+00:00",
+  "http_status": 200,
+  "raw_response_file": "data/osrm_table_response.json",
+  "raw_response_sha256": "caa8f701841fcf0ebe3db9e7f9036ec9fed3ba74b863d34e6ee3ba36dec3e288",
+  "consultation_date": "2026-11-08",
+  "profile": "driving",
+  "service": "table",
+  "annotations": [
+    "distance",
+    "duration"
+  ],
+  "exclusions": [],
+  "documentation_url": "https://project-osrm.org/docs/v5.24.0/api/#table-service",
+  "data_version_reported": null,
+  "locations": [
+    {
+      "index": 0,
+      "name": "Sant’Alessio Siculo",
+      "requested_lon": 15.3492875,
+      "requested_lat": 37.9244943,
+      "snapped_lon": 15.349012,
+      "snapped_lat": 37.924581,
+      "snapping_distance_m": 26.1172133,
+      "road_name": "",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Sant%27Alessio+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39429",
+      "coordinate_raw_response_file": "data/coordinate_source_0.json",
+      "coordinate_raw_response_sha256": "22915fd9b751ec7518ea20457c1b61423cf6717839ebfd1b057359acb033508e",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:43:26.418184+00:00",
+      "point_description": "Deposito convenzionale nel comune di Sant’Alessio Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "index": 1,
+      "name": "Santa Teresa di Riva",
+      "requested_lon": 15.367689,
+      "requested_lat": 37.946962,
+      "snapped_lon": 15.367854,
+      "snapped_lat": 37.946854,
+      "snapping_distance_m": 18.81901671,
+      "road_name": "Via Roma",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Santa+Teresa+di+Riva%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39431",
+      "coordinate_raw_response_file": "data/coordinate_source_1.json",
+      "coordinate_raw_response_sha256": "6696b9eed3630b4190a1b3de5cf48308dd24feae00efc477ae4f2a37e0e171a1",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:43:35.395003+00:00",
+      "point_description": "Punto convenzionale nel centro di Santa Teresa di Riva, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "index": 2,
+      "name": "Furci Siculo",
+      "requested_lon": 15.381735,
+      "requested_lat": 37.9612044,
+      "snapped_lon": 15.381784,
+      "snapped_lat": 37.961169,
+      "snapping_distance_m": 5.79890734,
+      "road_name": "Via Quattro Novembre",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Furci+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39453",
+      "coordinate_raw_response_file": "data/coordinate_source_2.json",
+      "coordinate_raw_response_sha256": "f16d378664e5aec37d8834ce107f19a60140153f34a626c9b392297ded2443d2",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:43:41.958460+00:00",
+      "point_description": "Punto convenzionale nel centro di Furci Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "index": 3,
+      "name": "Roccalumera",
+      "requested_lon": 15.395189,
+      "requested_lat": 37.976263,
+      "snapped_lon": 15.395198,
+      "snapped_lat": 37.976258,
+      "snapping_distance_m": 0.9660770558,
+      "road_name": "Via Avarna B",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Roccalumera%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39455",
+      "coordinate_raw_response_file": "data/coordinate_source_3.json",
+      "coordinate_raw_response_sha256": "f78721f23ecaf3f677cf36015f1425c744746db81f21756d05a71537215c5365",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:43:48.432823+00:00",
+      "point_description": "Punto convenzionale nel centro di Roccalumera, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "index": 4,
+      "name": "Letojanni",
+      "requested_lon": 15.3064429,
+      "requested_lat": 37.8802614,
+      "snapped_lon": 15.306352,
+      "snapped_lat": 37.88033,
+      "snapping_distance_m": 11.07948221,
+      "road_name": "Via Vittorio Emanuele",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Letojanni%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39393",
+      "coordinate_raw_response_file": "data/coordinate_source_4.json",
+      "coordinate_raw_response_sha256": "acaff5178b5aa11017dd06052eec10e5342071880753555e249557805c9c202b",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:43:55.565999+00:00",
+      "point_description": "Punto convenzionale nel centro di Letojanni, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "index": 5,
+      "name": "Taormina",
+      "requested_lon": 15.2830191,
+      "requested_lat": 37.8512218,
+      "snapped_lon": 15.282962,
+      "snapped_lat": 37.851313,
+      "snapping_distance_m": 11.27692172,
+      "road_name": "",
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Taormina%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39384",
+      "coordinate_raw_response_file": "data/coordinate_source_5.json",
+      "coordinate_raw_response_sha256": "fd806083ab06e56b73a499fb5ad50dd35e56756eec7dd82c556f8b6cd0b645bb",
+      "coordinate_retrieved_at_utc": "2026-11-08T11:44:01.921285+00:00",
+      "point_description": "Punto convenzionale nel centro di Taormina, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    }
+  ],
+  "node_order": [
+    "Sant’Alessio Siculo",
+    "Santa Teresa di Riva",
+    "Furci Siculo",
+    "Roccalumera",
+    "Letojanni",
+    "Taormina"
+  ],
+  "distances_m": [
+    [
+      0,
+      3812.3,
+      6218.6,
+      8687.7,
+      7586.7,
+      12866.7
+    ],
+    [
+      3332.3,
+      0,
+      3197.7,
+      5666.8,
+      10908.1,
+      16188
+    ],
+    [
+      5810.2,
+      2387.1,
+      0,
+      3643.3,
+      13386,
+      20823.1
+    ],
+    [
+      8094.7,
+      4671.5,
+      2284.5,
+      0,
+      15670.5,
+      20494.9
+    ],
+    [
+      7452.3,
+      11253.7,
+      13660,
+      19012.5,
+      0,
+      5822
+    ],
+    [
+      12963,
+      21279.2,
+      18892.2,
+      19986.7,
+      7484.5,
+      0
+    ]
+  ],
+  "durations_s": [
+    [
+      0,
+      281.6,
+      377.6,
+      558.5,
+      609.1,
+      977.6
+    ],
+    [
+      249.4,
+      0,
+      269.2,
+      450.1,
+      845.4,
+      1213.9
+    ],
+    [
+      340.8,
+      195.6,
+      0,
+      267.1,
+      936.8,
+      1184.3
+    ],
+    [
+      479,
+      333.8,
+      138.2,
+      0,
+      1075,
+      1167.4
+    ],
+    [
+      537.3,
+      812.2,
+      908.2,
+      1081.4,
+      0,
+      521.5
+    ],
+    [
+      991.8,
+      1244.5,
+      1048.9,
+      1167.2,
+      686.9,
+      0
+    ]
+  ],
+  "distances_km": [
+    [
+      0.0,
+      3.8123,
+      6.2186,
+      8.687700000000001,
+      7.5866999999999996,
+      12.866700000000002
+    ],
+    [
+      3.3323,
+      0.0,
+      3.1976999999999998,
+      5.6668,
+      10.908100000000001,
+      16.188
+    ],
+    [
+      5.8102,
+      2.3870999999999998,
+      0.0,
+      3.6433,
+      13.386,
+      20.8231
+    ],
+    [
+      8.0947,
+      4.6715,
+      2.2845,
+      0.0,
+      15.6705,
+      20.4949
+    ],
+    [
+      7.4523,
+      11.2537,
+      13.66,
+      19.0125,
+      0.0,
+      5.822
+    ],
+    [
+      12.963,
+      21.2792,
+      18.8922,
+      19.9867,
+      7.4845,
+      0.0
+    ]
+  ],
+  "durations_min": [
+    [
+      0.0,
+      4.693333333333333,
+      6.293333333333334,
+      9.308333333333334,
+      10.151666666666667,
+      16.293333333333333
+    ],
+    [
+      4.156666666666667,
+      0.0,
+      4.486666666666666,
+      7.501666666666667,
+      14.09,
+      20.23166666666667
+    ],
+    [
+      5.680000000000001,
+      3.26,
+      0.0,
+      4.451666666666667,
+      15.613333333333333,
+      19.738333333333333
+    ],
+    [
+      7.983333333333333,
+      5.5633333333333335,
+      2.3033333333333332,
+      0.0,
+      17.916666666666668,
+      19.456666666666667
+    ],
+    [
+      8.955,
+      13.536666666666667,
+      15.136666666666667,
+      18.023333333333333,
+      0.0,
+      8.691666666666666
+    ],
+    [
+      16.529999999999998,
+      20.741666666666667,
+      17.48166666666667,
+      19.453333333333333,
+      11.448333333333332,
+      0.0
+    ]
+  ],
+  "method_notes_it": [
+    "Matrice completa orientata: 30 collegamenti stradali fra sei punti reali, oltre alla diagonale nulla.",
+    "Il deposito è un punto convenzionale nel comune di Sant’Alessio Siculo, in provincia di Messina; non si assume l’esistenza di un magazzino commerciale presso la coordinata scelta.",
+    "Le coordinate rappresentative delle sei località provengono da OpenStreetMap attraverso sei ricerche puntuali Nominatim, le cui risposte originali sono conservate con URL, data e ora UTC e impronta SHA-256; non costituiscono un dataset ufficiale comunale o ISTAT.",
+    "Le coordinate dei cinque clienti definiscono punti convenzionali nei rispettivi centri comunali e non identificano clienti commerciali reali.",
+    "I punti sono agganciati da OSRM alla rete stradale; coordinate richieste e risultanti, nomi stradali restituiti e scostamenti sono conservati.",
+    "Le distanze sono le lunghezze degli itinerari più veloci restituiti dal profilo driving di OSRM, non i minimi chilometrici assoluti sulla rete stradale.",
+    "I tempi sono stime del motore di routing, non misure sul campo né garanzie sui tempi nelle condizioni di traffico e viabilità effettive.",
+    "I due versi sono conservati separatamente e possono avere valori differenti; non è stata imposta una simmetria artificiale.",
+    "Le fonti delle coordinate servono soltanto a fissare i punti; tutte le distanze e durate della matrice provengono dalla medesima interrogazione OSRM.",
+    "La risposta originale è congelata per rendere i risultati riproducibili; future interrogazioni possono restituire dati aggiornati.",
+    "Il servizio non ha restituito il campo data_version, quindi non è nota la data esatta dell’estratto OpenStreetMap utilizzato.",
+    "Il profilo per auto non verifica eventuali restrizioni specifiche di massa, sagoma, merci, accesso a zone a traffico limitato o autorizzazioni dei furgoni refrigerati.",
+    "La matrice finale usa il profilo driving senza esclusioni, pertanto non è assunta l’assenza di tratti a pedaggio.",
+    "Dati geografici © OpenStreetMap contributors, ODbL 1.0; attribuzione e licenza: https://www.openstreetmap.org/copyright."
+  ],
+  "validation": {
+    "http_status": 200,
+    "routing_code": "Ok",
+    "directed_arcs": 30,
+    "missing_values": 0,
+    "matrix_symmetric": false,
+    "maximum_snapping_distance_m": 26.1172133
+  },
+  "coordinate_references": {
+    "provider": "OpenStreetMap contributors via Nominatim",
+    "reference_type": "Representative coordinates of named municipalities returned by Nominatim Search; not surveyed customer premises",
+    "raw_responses_index_file": "data/coordinate_sources.json",
+    "documentation_url": "https://nominatim.org/release-docs/latest/api/Search/",
+    "usage_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
+    "attribution_url": "https://www.openstreetmap.org/copyright",
+    "collection_method": "Six one-time sequential geocoding queries; non-default identifying User-Agent; response caching; at least 1.1 seconds between requests."
+  }
+}

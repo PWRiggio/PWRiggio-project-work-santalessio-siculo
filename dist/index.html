@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Pianificazione per enumerazione completa delle consegne agroalimentari da Sant’Alessio Siculo e confronto economico tra uno e due veicoli.">
+  <title>Le consegne da Sant’Alessio Siculo | Pianificazione e costi</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <a class="brand" href="#contenuto" aria-label="Le consegne da Sant’Alessio Siculo, inizio pagina">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 25V10l9-5 9 5v15M7 15l9 5 9-5M16 5v23"/><circle cx="7" cy="10" r="2.5"/><circle cx="25" cy="10" r="2.5"/><circle cx="16" cy="20" r="2.5"/></svg>
+      <span>Logistica di Sant’Alessio</span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <a href="#percorsi">Percorsi</a>
+      <a href="#confronto">Costi</a>
+      <a href="#dati">Dati e metodo</a>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero page-width" aria-labelledby="titolo">
+      <div class="hero-copy">
+        <p class="eyebrow">Project work · Informatica per le Aziende Digitali</p>
+        <h1 id="titolo">Le consegne<br><span class="hero-place">da Sant’Alessio Siculo</span></h1>
+        <p class="hero-description" id="hero-description">Consegne agroalimentari da Sant’Alessio Siculo: percorsi e costi per confrontare due organizzazioni del servizio.</p>
+        <div class="hero-tags"><span>Enumerazione completa</span><span>Python + HTML</span><span>Dati stradali OSRM</span></div>
+      </div>
+      <aside class="hero-facts" aria-label="Dimensioni del caso di studio">
+        <p class="location-label" id="location-label">Sant’Alessio Siculo e comuni vicini · Messina</p>
+        <p class="big-fact"><strong id="total-load">—</strong><span>kg da distribuire</span></p>
+        <div class="hero-facts-bottom"><p><strong id="client-count">—</strong><span>clienti</span></p><p><strong id="node-count">—</strong><span>nodi del grafo</span></p><p><strong id="scenario-count">—</strong><span>scenari</span></p></div>
+      </aside>
+    </section>
+
+    <div id="data-error" class="error-message page-width" role="alert" hidden></div>
+    <noscript><p class="error-message page-width">Per visualizzare risultati, grafi e simulatore occorre abilitare JavaScript. I dati completi sono disponibili anche nei file JSON del progetto.</p></noscript>
+
+    <section class="context page-width" aria-labelledby="contesto-titolo">
+      <h2 id="contesto-titolo">Il settore lattiero-caseario come riferimento</h2>
+      <p>L'Azienda di riferimento è <strong>Latterie Ragusane S.p.A.</strong>, che propone con i marchi <strong>Zappalà</strong> e <strong>Sikanino</strong> mozzarelle, ricotte, formaggi e latte per la grande distribuzione e la ristorazione. L’impresa indica una sede operativa a Zafferana Etnea. Il deposito di <strong>Sant’Alessio Siculo</strong>, i destinatari e gli ordini appartengono alla simulazione, distinta dalle sedi aziendali e dalla rete distributiva effettiva dell’impresa. Il circuito considera le consegne dopo l’arrivo della merce al deposito.</p>
+    </section>
+
+    <section class="page-width section-block" aria-labelledby="scenari-titolo">
+      <div class="section-heading"><div><p class="eyebrow">01 · Le alternative</p><h2 id="scenari-titolo">La stessa domanda, due organizzazioni</h2></div></div>
+      <div class="scenario-grid">
+        <article class="scenario-card scenario-one" aria-labelledby="single-title">
+          <div class="scenario-top"><span class="scenario-symbol" aria-hidden="true">01</span><div><p class="scenario-kicker">Scenario A</p><h3 id="single-title">Un veicolo</h3><p class="capacity-note" id="single-capacity">Capacità e risorse dai dati del progetto</p></div></div>
+          <dl class="scenario-metrics"><div><dt>Distanza totale</dt><dd id="single-distance">—</dd></div><div><dt>Costo della missione</dt><dd id="single-cost">—</dd></div><div><dt>Completamento</dt><dd id="single-completion">—</dd></div><div><dt>Ore autista complessive</dt><dd id="single-hours">—</dd></div></dl>
+          <p class="scenario-bottom" id="single-enumeration">Calcolo per enumerazione completa.</p>
+        </article>
+        <article class="scenario-card scenario-two" aria-labelledby="double-title">
+          <div class="scenario-top"><span class="scenario-symbol" aria-hidden="true">02</span><div><p class="scenario-kicker">Scenario B</p><h3 id="double-title">Due veicoli</h3><p class="capacity-note" id="double-capacity">Capacità e risorse dai dati del progetto</p></div></div>
+          <dl class="scenario-metrics"><div><dt>Distanza totale</dt><dd id="double-distance">—</dd></div><div><dt>Costo della missione</dt><dd id="double-cost">—</dd></div><div><dt>Completamento</dt><dd id="double-completion">—</dd></div><div><dt>Ore autista complessive</dt><dd id="double-hours">—</dd></div></dl>
+          <p class="scenario-bottom" id="double-enumeration">Calcolo per enumerazione completa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="percorsi" class="page-width section-block" aria-labelledby="percorsi-titolo">
+      <div class="section-heading"><div><p class="eyebrow">02 · Le soluzioni ottime</p><h2 id="percorsi-titolo">I percorsi sul grafo</h2></div></div>
+      <div class="graph-grid">
+        <article class="graph-card"><div class="graph-card-head"><h3>Scenario A</h3><span class="legend-item"><i class="dot green"></i>Veicolo grande</span></div><div id="single-graph" class="route-graph"></div><div id="single-routes" class="route-details"></div></article>
+        <article class="graph-card"><div class="graph-card-head"><h3>Scenario B</h3><div class="graph-legend"><span class="legend-item"><i class="dot copper"></i>Veicolo 1</span><span class="legend-item"><i class="dot teal"></i>Veicolo 2</span></div></div><div id="double-graph" class="route-graph"></div><div id="double-routes" class="route-details"></div></article>
+      </div>
+    </section>
+
+    <section id="confronto" class="cost-section" aria-labelledby="costi-titolo">
+      <div class="page-width">
+        <div class="section-heading"><div><p class="eyebrow">03 · Il confronto economico</p><h2 id="costi-titolo">Quando cambia la convenienza?</h2></div></div>
+        <div class="economics-layout">
+          <form id="cost-form" class="cost-controls" aria-label="Parametri del confronto economico" novalidate>
+            <div class="controls-heading"><h3>Ipotesi di costo</h3><button type="button" id="reset-costs" class="text-button">Ripristina</button></div>
+            <div class="main-control"><div class="label-row"><label for="large-fixed">Noleggio del veicolo grande</label><output for="large-fixed" id="large-fixed-value">—</output></div><input id="large-fixed" name="large-fixed" type="range" min="0" max="1" step="0.01" value="0" aria-describedby="range-note"><div class="range-labels"><span id="range-min">—</span><span id="range-max">—</span></div><p class="field-hint" id="range-note">Costo per veicolo e per giornata di utilizzo.</p></div>
+            <div class="number-field"><label for="small-fixed">Noleggio di ciascun veicolo piccolo</label><div class="input-unit"><input id="small-fixed" name="small-fixed" type="number" min="0" max="1000" step="1" inputmode="decimal" required><span>€/giorno</span></div></div>
+            <div class="paired-controls"><div class="number-field"><label for="large-km">Costo km<br>veicolo grande</label><div class="input-unit"><input id="large-km" name="large-km" type="number" min="0" max="20" step="0.01" inputmode="decimal" required><span>€/km</span></div></div><div class="number-field"><label for="small-km">Costo km<br>veicolo piccolo</label><div class="input-unit"><input id="small-km" name="small-km" type="number" min="0" max="20" step="0.01" inputmode="decimal" required><span>€/km</span></div></div></div>
+            <div class="number-field"><label for="driver-hour">Costo orario di ciascun autista</label><div class="input-unit"><input id="driver-hour" name="driver-hour" type="number" min="0" max="200" step="0.5" inputmode="decimal" required><span>€/h</span></div></div>
+            <p id="input-error" class="input-error" role="alert" hidden>Inserisci prezzi validi, non negativi e negli intervalli ammessi. I risultati mantengono gli ultimi valori validi.</p>
+          </form>
+          <div class="economic-results">
+            <div class="decision-summary" aria-live="polite" aria-atomic="true"><p class="eyebrow">Con i parametri attuali</p><h3 id="decision-title">—</h3><p id="decision-detail">—</p></div>
+            <div class="chart-head"><h3>Costi al variare del noleggio grande</h3><div class="graph-legend"><span class="legend-item"><i class="line-swatch green"></i>Un veicolo</span><span class="legend-item"><i class="line-swatch copper"></i>Due veicoli</span></div></div>
+            <div id="cost-chart" class="cost-chart"></div>
+            <div class="threshold-note"><div><span class="small-label">Noleggio grande al pareggio</span><strong id="threshold-value">—</strong></div><p id="threshold-detail">—</p></div>
+          </div>
+        </div>
+        <div class="components-table-wrapper"><table class="components-table"><caption>Composizione del costo della missione</caption><thead><tr><th scope="col">Voce</th><th scope="col">Un veicolo</th><th scope="col">Due veicoli</th></tr></thead><tbody id="cost-components"></tbody></table></div>
+        <p class="under-note formula-note"><strong>Modello:</strong> costo totale = numero di veicoli × noleggio unitario + chilometri totali × costo chilometrico + ore autista complessive × costo orario.</p>
+      </div>
+    </section>
+
+    <section id="dati" class="page-width section-block" aria-labelledby="dati-titolo">
+      <div class="section-heading"><div><p class="eyebrow">04 · Dati e metodo</p><h2 id="dati-titolo">Ogni risultato è ricostruibile</h2></div></div>
+      <div class="data-overview"><div><h3>Le quantità da consegnare</h3><p>La domanda totale supera la capacità di un solo mezzo piccolo, mentre l’assegnazione individuata rispetta la capacità di entrambi.</p><table class="demand-table"><caption class="sr-only">Domanda dei cinque clienti convenzionali</caption><thead><tr><th scope="col">Nodo</th><th scope="col">Località</th><th scope="col">Domanda</th></tr></thead><tbody id="demand-body"></tbody><tfoot><tr><th scope="row" colspan="2">Totale</th><td id="demand-total">—</td></tr></tfoot></table></div><div class="method-copy"><h3>Ricerca esaustiva, vincoli espliciti</h3><p id="method-single"></p><p id="method-double"></p><p>Ogni soluzione parte dal nodo 0 e vi ritorna, serve tutti i clienti una sola volta e rispetta la capacità di carico. Il primo criterio è la minima distanza totale; a parità di distanza si considera il tempo di guida complessivo, poi un ordinamento deterministico dei percorsi.</p><p id="operations-note"></p><p>Le ore dei due autisti si sommano per il calcolo economico. Il massimo delle durate esprime invece il tempo necessario a completare la missione con i veicoli impiegati in parallelo.</p></div></div>
+      <details class="matrix-details" open><summary>Matrice delle distanze stradali <span>km · dalla riga alla colonna</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Matrice delle distanze, scorrimento orizzontale disponibile"><table class="distance-matrix" aria-label="Matrice delle distanze stradali in chilometri"><thead id="matrix-head"></thead><tbody id="matrix-body"></tbody></table></div></details>
+    </section>
+
+  </main>
+  <footer class="site-footer page-width"><p>Le consegne da Sant’Alessio Siculo</p><p>OpenStreetMap contributors · Dati ODbL · Routing OSRM</p></footer>
+</body>
+</html>

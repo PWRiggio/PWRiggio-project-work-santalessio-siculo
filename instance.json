@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "title": "Pianificazione delle consegne agroalimentari nell’area di Sant’Alessio Siculo",
+  "depot_id": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Sant’Alessio Siculo",
+      "demand_kg": 0,
+      "lon": 15.349012,
+      "lat": 37.924581,
+      "requested_lon": 15.3492875,
+      "requested_lat": 37.9244943,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Sant%27Alessio+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39429",
+      "point_description": "Deposito convenzionale nel comune di Sant’Alessio Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 1,
+      "name": "Santa Teresa di Riva",
+      "demand_kg": 80,
+      "lon": 15.367854,
+      "lat": 37.946854,
+      "requested_lon": 15.367689,
+      "requested_lat": 37.946962,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Santa+Teresa+di+Riva%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39431",
+      "point_description": "Punto convenzionale nel centro di Santa Teresa di Riva, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 2,
+      "name": "Furci Siculo",
+      "demand_kg": 40,
+      "lon": 15.381784,
+      "lat": 37.961169,
+      "requested_lon": 15.381735,
+      "requested_lat": 37.9612044,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Furci+Siculo%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39453",
+      "point_description": "Punto convenzionale nel centro di Furci Siculo, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 3,
+      "name": "Roccalumera",
+      "demand_kg": 50,
+      "lon": 15.395198,
+      "lat": 37.976258,
+      "requested_lon": 15.395189,
+      "requested_lat": 37.976263,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Roccalumera%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39455",
+      "point_description": "Punto convenzionale nel centro di Roccalumera, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 4,
+      "name": "Letojanni",
+      "demand_kg": 35,
+      "lon": 15.306352,
+      "lat": 37.88033,
+      "requested_lon": 15.3064429,
+      "requested_lat": 37.8802614,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Letojanni%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39393",
+      "point_description": "Punto convenzionale nel centro di Letojanni, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    },
+    {
+      "id": 5,
+      "name": "Taormina",
+      "demand_kg": 55,
+      "lon": 15.282962,
+      "lat": 37.851313,
+      "requested_lon": 15.2830191,
+      "requested_lat": 37.8512218,
+      "coordinate_source_url": "https://nominatim.openstreetmap.org/search?q=Taormina%2C+Messina%2C+Sicilia%2C+Italia&format=jsonv2&addressdetails=1&limit=1",
+      "coordinate_osm_object_url": "https://www.openstreetmap.org/relation/39384",
+      "point_description": "Punto convenzionale nel centro di Taormina, definito dalla coordinata rappresentativa OSM della località e agganciato alla rete stradale"
+    }
+  ],
+  "distances_m": [
+    [
+      0,
+      3812.3,
+      6218.6,
+      8687.7,
+      7586.7,
+      12866.7
+    ],
+    [
+      3332.3,
+      0,
+      3197.7,
+      5666.8,
+      10908.1,
+      16188
+    ],
+    [
+      5810.2,
+      2387.1,
+      0,
+      3643.3,
+      13386,
+      20823.1
+    ],
+    [
+      8094.7,
+      4671.5,
+      2284.5,
+      0,
+      15670.5,
+      20494.9
+    ],
+    [
+      7452.3,
+      11253.7,
+      13660,
+      19012.5,
+      0,
+      5822
+    ],
+    [
+      12963,
+      21279.2,
+      18892.2,
+      19986.7,
+      7484.5,
+      0
+    ]
+  ],
+  "durations_s": [
+    [
+      0,
+      281.6,
+      377.6,
+      558.5,
+      609.1,
+      977.6
+    ],
+    [
+      249.4,
+      0,
+      269.2,
+      450.1,
+      845.4,
+      1213.9
+    ],
+    [
+      340.8,
+      195.6,
+      0,
+      267.1,
+      936.8,
+      1184.3
+    ],
+    [
+      479,
+      333.8,
+      138.2,
+      0,
+      1075,
+      1167.4
+    ],
+    [
+      537.3,
+      812.2,
+      908.2,
+      1081.4,
+      0,
+      521.5
+    ],
+    [
+      991.8,
+      1244.5,
+      1048.9,
+      1167.2,
+      686.9,
+      0
+    ]
+  ],
+  "vehicles": {
+    "large": {
+      "count": 1,
+      "capacity_kg": 300,
+      "fixed_cost_eur": 95,
+      "variable_cost_eur_km": 0.48
+    },
+    "small": {
+      "count": 2,
+      "capacity_kg": 150,
+      "fixed_cost_eur": 55,
+      "variable_cost_eur_km": 0.38
+    }
+  },
+  "operations": {
+    "driver_eur_hour": 18,
+    "service_minutes_client": 10,
+    "preparation_minutes_vehicle": 15
+  },
+  "sensitivity": {
+    "parameter": "large_vehicle_fixed_cost_eur",
+    "min_eur": 60,
+    "max_eur": 180,
+    "step_eur": 5
+  },
+  "source": {
+    "name": "OSRM public routing service on OpenStreetMap road network",
+    "query_url": "https://router.project-osrm.org/table/v1/driving/15.3492875,37.9244943;15.3676890,37.9469620;15.3817350,37.9612044;15.3951890,37.9762630;15.3064429,37.8802614;15.2830191,37.8512218?annotations=distance,duration",
+    "consultation_date": "2026-11-08",
+    "retrieved_at_utc": "2026-11-08T11:45:14.104910+00:00",
+    "documentation_url": "https://project-osrm.org/docs/v5.24.0/api/#table-service",
+    "raw_response_file": "data/osrm_table_response.json",
+    "raw_response_sha256": "caa8f701841fcf0ebe3db9e7f9036ec9fed3ba74b863d34e6ee3ba36dec3e288",
+    "details_file": "data/road_distances.json",
+    "coordinate_sources_file": "data/coordinate_sources.json",
+    "coordinate_documentation_url": "https://nominatim.org/release-docs/latest/api/Search/",
+    "coordinate_usage_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
+    "attribution_url": "https://www.openstreetmap.org/copyright",
+    "method_notes_it": [
+      "Matrice completa orientata: 30 collegamenti stradali fra sei punti reali, oltre alla diagonale nulla.",
+      "Il deposito è un punto convenzionale nel comune di Sant’Alessio Siculo, in provincia di Messina; non si assume l’esistenza di un magazzino commerciale presso la coordinata scelta.",
+      "Le coordinate rappresentative delle sei località provengono da OpenStreetMap attraverso sei ricerche puntuali Nominatim, le cui risposte originali sono conservate con URL, data e ora UTC e impronta SHA-256; non costituiscono un dataset ufficiale comunale o ISTAT.",
+      "Le coordinate dei cinque clienti definiscono punti convenzionali nei rispettivi centri comunali e non identificano clienti commerciali reali.",
+      "I punti sono agganciati da OSRM alla rete stradale; coordinate richieste e risultanti, nomi stradali restituiti e scostamenti sono conservati.",
+      "Le distanze sono le lunghezze degli itinerari più veloci restituiti dal profilo driving di OSRM, non i minimi chilometrici assoluti sulla rete stradale.",
+      "I tempi sono stime del motore di routing, non misure sul campo né garanzie sui tempi nelle condizioni di traffico e viabilità effettive.",
+      "I due versi sono conservati separatamente e possono avere valori differenti; non è stata imposta una simmetria artificiale.",
+      "Le fonti delle coordinate servono soltanto a fissare i punti; tutte le distanze e durate della matrice provengono dalla medesima interrogazione OSRM.",
+      "La risposta originale è congelata per rendere i risultati riproducibili; future interrogazioni possono restituire dati aggiornati.",
+      "Il servizio non ha restituito il campo data_version, quindi non è nota la data esatta dell’estratto OpenStreetMap utilizzato.",
+      "Il profilo per auto non verifica eventuali restrizioni specifiche di massa, sagoma, merci, accesso a zone a traffico limitato o autorizzazioni dei furgoni refrigerati.",
+      "La matrice finale usa il profilo driving senza esclusioni, pertanto non è assunta l’assenza di tratti a pedaggio.",
+      "Dati geografici © OpenStreetMap contributors, ODbL 1.0; attribuzione e licenza: https://www.openstreetmap.org/copyright."
+    ]
+  },
+  "model_notes_it": [
+    "Domande, capacità, tempi di servizio e prezzi unitari costituiscono ipotesi dichiarate di simulazione e non dati commerciali rilevati presso il produttore.",
+    "Ogni cliente riceve la consegna da un solo veicolo; ogni mezzo effettua un unico giro con partenza e rientro al deposito.",
+    "Le domande positive sommano 260 kg: un mezzo da 150 kg non basta, mentre due mezzi possono servire l’istanza.",
+    "I prezzi sono espressi in euro al netto di IVA, con convenzione uniforme tra scenari; non sono preventivi di noleggio.",
+    "Il costo degli autisti remunera il tempo operativo frazionabile; minimi contrattuali e turni indivisibili non sono modellati.",
+    "Il tempo di completamento con due veicoli presuppone partenze e preparazioni parallele; la somma delle ore operative serve invece a calcolare il costo dei due autisti.",
+    "La capacità è espressa in massa e non sostituisce una verifica del volume utile, della compatibilità del carico e delle restrizioni stradali dei mezzi.",
+    "L’ottimo riguarda i chilometri della matrice congelata di itinerari stradali OSRM; non è una certificazione della percorrenza minima sulla rete reale né dell’ottimo economico generale.",
+    "Il costo chilometrico è una stima aggregata di energia, consumo variabile d’uso e altri oneri di percorrenza non inclusi nel noleggio; eventuali pedaggi non sono misurati separatamente e il confronto non costituisce una ricostruzione tariffaria degli itinerari."
+  ]
+}
